@@ -1,7 +1,7 @@
 'use strict';
 
 const print = () => {
-    console.log("I WILL REBOOT THE SERVER")
+    console.log("PRINT v1.0.1")
 }
 
 // export {reboot}
