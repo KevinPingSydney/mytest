@@ -1,7 +1,7 @@
 'use strict';
 
 const print = () => {
-    console.log("PRINT v1.0.5")
+    console.log("PRINT v1.0.6")
 }
 
 // export {reboot}
