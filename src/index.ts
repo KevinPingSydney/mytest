@@ -1,3 +1,1 @@
-const { myPrint } = require("./myPrint");
-
-myPrint();
+export * from './myPrint'

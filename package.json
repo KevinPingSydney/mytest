@@ -1,6 +1,6 @@
 {
   "name": "mytest",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "The most complete chat UI for React Native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,7 +14,6 @@
   ],
   "author": "Ping Wu",
   "license": "MIT",
-  
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "./node_modules/.bin/eslint ./src/*.{ts,tsx} --fix",
@@ -29,9 +28,11 @@
     "prettier": "./node_modules/.bin/prettier --write \"src/**/*.{ts,tsx}\""
   },
   "devDependencies": {
-    "@babel/core": "7.17.9",
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
     "@babel/plugin-transform-flow-strip-types": "7.16.7",
     "@babel/preset-env": "7.16.11",
+    "@babel/preset-flow": "^7.18.6",
     "@babel/preset-typescript": "7.16.7",
     "@types/jest": "27.4.1",
     "@types/uuid": "3.4.9",
@@ -40,7 +41,7 @@
     "babel-jest": "27.5.1",
     "eslint": "8.13.0",
     "eslint-config-prettier": "8.5.0",
-    "flow-bin": "0.125.0",
+    "flow-bin": "^0.182.0",
     "husky": "4.2.5",
     "jest": "27.5.1",
     "json": "9.0.6",
@@ -49,9 +50,5 @@
   },
   "dependencies": {
     "uuid": "3.4.0"
-  },
-  "peerDependencies": {
-  },
-  "husky": {
   }
 }
