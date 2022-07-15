@@ -1,15 +1,57 @@
 {
   "name": "mytest",
-  "version": "1.0.6",
-  "description": "Test package",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.8",
+  "description": "The most complete chat UI for React Native",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KevinPingSydney/mytest.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "datamesh",
+    "test"
+  ],
+  "author": "Ping Wu",
+  "license": "MIT",
+  
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "./node_modules/.bin/eslint ./src/*.{ts,tsx} --fix",
+    "tsc": "node_modules/.bin/tsc --noEmit",
+    "tsc:watch": "node_modules/.bin/tsc --watch --noEmit",
+    "start": "cd example && expo start",
+    "build": "rm -rf lib/ && node_modules/.bin/tsc",
+    "test": "TZ=Europe/Paris jest --no-watchman",
+    "test:watch": "TZ=Europe/Paris jest --watch",
+    "test:coverage": "TZ=Europe/Paris jest --coverage",
+    "prepublishOnly": "yarn lint && yarn build && yarn test",
+    "prettier": "./node_modules/.bin/prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.9",
+    "@babel/plugin-transform-flow-strip-types": "7.16.7",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-typescript": "7.16.7",
+    "@types/jest": "27.4.1",
+    "@types/uuid": "3.4.9",
+    "@typescript-eslint/eslint-plugin": "5.18.0",
+    "@typescript-eslint/parser": "5.18.0",
+    "babel-jest": "27.5.1",
+    "eslint": "8.13.0",
+    "eslint-config-prettier": "8.5.0",
+    "flow-bin": "0.125.0",
+    "husky": "4.2.5",
+    "jest": "27.5.1",
+    "json": "9.0.6",
+    "prettier": "2.0.5",
+    "typescript": "4.6.3"
+  },
   "dependencies": {
-    
+    "uuid": "3.4.0"
+  },
+  "peerDependencies": {
+  },
+  "husky": {
   }
 }
