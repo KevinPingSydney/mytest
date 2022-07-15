@@ -1,6 +1,6 @@
 {
   "name": "mytest",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "The most complete chat UI for React Native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

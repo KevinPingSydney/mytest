@@ -2,5 +2,5 @@
 
 
 module.exports.myPrint = () => {
-    console.log("PRINT: v1.0.8")
+    console.log("PRINT: v1.0.9")
 };
