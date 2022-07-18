@@ -17,10 +17,9 @@
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "./node_modules/.bin/eslint ./src/*.{ts,tsx} --fix",
-    "tsc": "node_modules/.bin/tsc --noEmit",
     "tsc:watch": "node_modules/.bin/tsc --watch --noEmit",
-    "start": "cd example && expo start",
-    "build": "rm -rf lib/ && node_modules/.bin/tsc",
+    "buildbak": "rm -rf lib/ && node_modules/.bin/tsc",
+    "build": "tsc",
     "test": "TZ=Europe/Paris jest --no-watchman",
     "test:watch": "TZ=Europe/Paris jest --watch",
     "test:coverage": "TZ=Europe/Paris jest --coverage",
